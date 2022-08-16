@@ -1,0 +1,24 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+}
+
+.reflector {
+  width: 100%;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transition: transform 3s;
+}
